@@ -1,0 +1,259 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+.header,
+.landing-page {
+  background-color: #0171f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 150px;
+}
+
+.header img {
+  width: 150px;
+  cursor: pointer;
+}
+.header .nav a,
+.contact-header a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: 0.5s ease;
+}
+
+.header .nav a:hover,
+.contact-header a:hover {
+  background-color: #2284fc;
+}
+
+.btn {
+  background-color: #fc5050;
+  border: none;
+  border-radius: 15px;
+  padding: 15px 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.btn:hover {
+  background-color: #e64848;
+}
+
+.landing-page {
+  border-radius: 0 0 100px 100px;
+  margin-bottom: 100px;
+}
+.landing-page img {
+  width: 500px;
+  border-radius: 25px;
+}
+
+.landing-page .welcome-sec {
+  width: 600px;
+  color: white;
+}
+
+.landing-page .welcome-sec h1 {
+  margin: 10px 0 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 50px;
+}
+
+.landing-page .welcome-sec p {
+  color: black;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0 0 70px;
+}
+
+.landing-page .welcome-sec input {
+  width: 250px;
+  padding: 15px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  height: 10px;
+}
+.landing-page .welcome-sec .btn {
+  position: absolute;
+  left: 360px;
+  height: 40px;
+  padding: 0 25px;
+}
+
+.trending-games,
+.most-played,
+.top-category {
+  padding: 35px 150px;
+  margin-bottom: 100px;
+}
+
+.trending-games .label,
+.most-played .label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trending-games .label span,
+.most-played .label span,
+.top-category .label span,
+.footer p span {
+  text-transform: uppercase;
+  color: #fc5050;
+  font-weight: bold;
+}
+.trending-games .label h2,
+.most-played .label h2,
+.top-category .label h2 {
+  text-transform: capitalize;
+  margin: 5px 0 30px;
+}
+.trending-games .cards,
+.most-played .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.trending-games .cards img,
+.most-played .cards img {
+  border-radius: 25px 25px 0 0;
+}
+
+.trending-games .cards .card-info {
+  background-color: rgb(235, 235, 235);
+  padding: 15px 25px;
+  border-radius: 0 0 25px 25px;
+}
+
+.trending-games .cards .card-info .name {
+  line-height: 0.7;
+}
+.trending-games .cards .card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.trending-games .cards .card-info i {
+  color: #5c8dc9;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.trending-games .cards .card-info i:hover {
+  transform: scale(1.5);
+}
+
+.most-played {
+  background-color: rgb(235, 235, 235);
+  border-radius: 100px;
+}
+
+.most-played .cards .card-info {
+  text-align: center;
+}
+
+.trending-games .cards .card,
+.most-played .cards .card,
+.top-category .cards .card {
+  transition: 0.5s ease;
+  padding: 15px;
+}
+
+.trending-games .cards .card:hover,
+.most-played .cards .card:hover,
+.top-category .cards .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.top-category .label {
+  text-align: center;
+}
+
+.top-category .label h2 {
+  margin: 0 0 40px;
+}
+
+.top-category .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-category .cards p {
+  text-align: center;
+  background-color: #0171f9;
+  color: white;
+  padding: 15px;
+  border-radius: 15px 15px 0 0;
+  margin: -5px 0px;
+}
+.top-category .cards img {
+  border-radius: 5px 5px;
+}
+
+.footer {
+  background-color: #0171f9;
+  padding: 40px 0;
+  border-radius: 70px 70px 0 0;
+  text-align: center;
+  color: white;
+}
+
+.footer p {
+  font-weight: 500;
+}
+
+/* contact us section */
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+
+.form form {
+  display: grid;
+  gap: 40px;
+  width: 400px;
+  background-color: #f5f5f5;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.contact-header {
+  background-color: #0171f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 150px;
+  margin: 0 0 50px;
+}
+
+.form form input[name="text"],
+.form form input[name="email"] {
+  padding: 15px 70px 15px 20px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  text-align: left;
+}
+
+.form form textarea {
+  outline: none;
+  border: none;
+  resize: none;
+  height: 200px;
+  padding: 15px 0 0 15px;
+  border-radius: 15px;
+  font-size: 15px;
+  font-family: "Roboto";
+}
